@@ -1,0 +1,68 @@
+Requirements for RAG Pipeline Solution
+
+This file lists the necessary libraries and their versions needed to implement the RAG pipeline solution. Follow the installation instructions below to set up your environment.
+
+Libraries and Installation Commands :
+
+1.Transformers
+
+   Version: 4.31.0
+   Description: A library for natural language processing (NLP) that provides pre-trained models for various tasks.
+   Installation Command: pip install transformers==4.31.0
+
+2.FAISS (Facebook AI Similarity Search)
+
+   Version: 1.7.3
+   Description: A library for efficient similarity search and clustering of dense vectors.
+   Installation Command: pip install faiss-cpu==1.7.3
+
+3.spaCy
+
+   Version: 3.5.3
+   Description: An NLP library for advanced natural language processing tasks, including Named Entity Recognition (NER).
+   Installation Command: pip install spacy==3.5.3
+
+4.Sentence Transformers
+
+   Version: 2.2.2
+   Description: A library for sentence embeddings, allowing for effective sentence-level tasks.
+   Installation Command: pip install sentence-transformers==2.2.2
+
+5.PyTorch
+
+   Version: 2.0.1
+   Description: An open-source machine learning library for deep learning applications.
+   Installation Command: pip install torch==2.0.1
+
+6.NumPy
+
+   Version: 1.24.3
+   Description: A fundamental package for numerical computations in Python.
+   Installation Command: pip install numpy==1.24.3
+
+
+Pre-trained Models Used
+
+1.MiniLM (Sentence Transformers)
+
+   Model Name: sentence-transformers/all-MiniLM-L6-v2
+   Description: A lightweight model for efficient sentence embedding and retrieval.
+   Model Card: https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+
+2.Cross-Encoder for Document Re-ranking
+
+   Model Name: cross-encoder/ms-marco-MiniLM-L-6-v2
+   Description: A model designed for re-ranking documents based on their relevance to a query.
+   Model Card: https://huggingface.co/cross-encoder/ms-marco-MiniLM-L-6-v2
+
+3.T5 (Text-to-Text Transfer Transformer)
+
+   Model Name: t5-large
+   Description: A versatile model for generating text based on input queries and contexts.
+   Model Card: https://huggingface.co/t5-large
+
+4.spaCy English NER Model
+
+   Model Name: en_core_web_sm
+   Description: A small English model for Named Entity Recognition.
+   Model Documentation: https://spacy.io/models/en#en_core_web_sm
